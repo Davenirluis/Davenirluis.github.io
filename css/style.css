@@ -1,0 +1,35 @@
+img{
+    height: 100%;
+    width: 100%;
+}
+h1{
+    text-align: center;
+    background-color:#FFCC8B86;
+    padding:10%;
+}
+body{
+    padding: 5%;
+}
+h2{
+    text-align: center;
+}
+body{
+    background-color: yellow;
+}
+
+
+/*index*/
+div#inicio{
+    padding: 10%;
+    background-color:#FFCC8B86;
+}
+
+
+blockquote#citacao{
+    background-color: darkgray;
+    padding: 10%;
+}
+
+a{
+    text-align: center;
+}
