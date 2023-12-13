@@ -16,7 +16,18 @@ h2{
 body{
     background-color: yellow;
 }
-
+p{
+    font-family: Arial;
+    font-size: 20pt;
+}
+h1{
+    font-family: Arial;
+    font-size: 30pt;
+}
+h2{
+    font-family: Arial;
+    font-size:25pt;
+}
 
 /*index*/
 div#inicio{
@@ -28,8 +39,13 @@ div#inicio{
 blockquote#citacao{
     background-color: darkgray;
     padding: 10%;
+    font-family: Arial;
+    font-size: 20pt;
 }
-
+cite{
+    font-family: Arial;
+    font-size: 12pt;
+}
 a{
     text-align: center;
 }
