@@ -75,3 +75,24 @@ a#casa{
     text-decoration: none;
     color: black;
 }
+
+
+/*banner de cookies*/
+div#permisao {
+  position: fixed;
+  bottom: 0;
+  padding: 20px 20px;
+  text-align: center;
+  background-color: yellow;
+  display: none;
+  font-family: Arial;
+  font-size: 14pt;
+}
+ 
+button.permisao{
+  background-color: darkgray;
+  padding: 10px;
+  font-family: Arial;
+  font-size: 14pt;
+  border-radius: 30px;
+}

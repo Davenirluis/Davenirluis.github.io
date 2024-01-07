@@ -6,6 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>O MÉDICO VAMPIRO</title>
       <link rel="stylesheet" href="css/style.css">
+          <!-- Google tag (gtag.js) -->
+  <script>
+  // nega o permissão de escrever qualquer cookie ou gravar dados para o google analitics por padrão
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {
+  'ad_storage': 'denied',
+  'analytics_storage': 'denied'
+  });
+  dataLayer.push({
+    'event': 'default_consent'
+  });  
+  </script>  
+  
+  <script src="https://www.googletagmanager.com/gtag/js?id=G-YLYRN03ZDS">
+</script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { 
+        dataLayer.push(arguments); 
+        }
+    gtag('js', new Date());
+    gtag('config', 'G-YLYRN03ZDS');
+    //esta linha deixa ip do cliente anônimo
+    gtag('config', 'UA-XXXXXXXXX–X', { 'anonymize_ip': true });
+  </script>  
 </head>
 
 <body>
@@ -103,7 +129,52 @@ O MÉDICO VAMPIRO
     </br></br>
     <i id="menor">DV</i>
 </footer>
-
+<div  id="permisao">
+         Ao navegar em nosso site você concorda com a criação de cookies anônimos
+         Para garantir que todos os serviços funcionem adequadamente, este site usa esses cookies. Nós não coletamos informações pessoais suas. </a>
+         </br>
+         <button class="permisao" onclick="aceitouoscookies()" >Concordo</button></br>
+         Ou pode usar nosso site de forma anônima clicando no botão abaixo.</br>  
+         <button class="permisao" onclick="ocultarbannercookie()" >Não Concordo</button>
+    </div>
+   <script>  
+    // a função deve ocultar banner de cookies
+    function ocultarbannercookie() {
+      document.getElementById('permisao').style.display = 'none';
+    }
+   //função disparada quando usuario aceita os cookies, que duram sesenta dias
+   function aceitouoscookies() {
+     var data = new Date();
+     data.setTime(data.getTime() + (60 * 24 * 60 * 60 * 1000));
+     var expiracookie = "expires=" + data.toUTCString();
+     document.cookie = "aceitouostermos=feito;" + expiracookie + ";";
+     document.getElementById('permisao').style.display = 'none';
+     
+       // função fazem permissões voltarem a gtag
+      gtag('consent', 'update', {
+         'ad_storage': 'granted',
+         'analytics_storage': 'granted'});
+      dataLayer.push({
+        'event': 'default_consent'
+      });
+    }
+   
+   var cookiedeaceito = document.cookie;
+   var existecookie = cookiedeaceito.indexOf("ceitouostermos=feito");
+   // verifica se existe o cookie, se não chama o aviso
+   if (existecookie < 1) {
+     document.getElementById('permisao').style.display = 'block';
+   }
+   // se já existir cookie permissões voltam a gtag
+   else{
+      gtag('consent', 'update', {
+         'ad_storage': 'granted',
+         'analytics_storage': 'granted'});
+      dataLayer.push({
+        'event': 'default_consent'
+      });
+   }
+ </script>
 </body>
 
 </html>
