@@ -100,10 +100,11 @@ a#menuet{
     font-size:20pt;
     position: relative;
     display: block;
-    
 }
-
-
+a#res{
+    text-decoration: none;
+    color:black;
+}
 
 /*banner de cookies*/
 div#permisao {
