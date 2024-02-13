@@ -76,6 +76,25 @@ a#casa{
     color: black;
 }
 
+div#menu{
+    text-align:center;
+    padding:10%;
+    background-color:#FFCC8B86;
+}
+a#menu{
+    padding:5%;
+    background-color:darkgray;
+    text-decoration:none;
+    color:black;
+    font-family:Arial;
+    font-size:20pt;
+    position: relative;
+    display: block;
+    
+}
+
+
+
 
 /*banner de cookies*/
 div#permisao {
