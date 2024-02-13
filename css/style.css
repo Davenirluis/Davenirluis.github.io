@@ -90,9 +90,18 @@ a#menu{
     font-size:20pt;
     position: relative;
     display: block;
+}
+a#menuet{
+    padding:5%;
+    background-color:#FFCC8B86;
+    text-decoration:none;
+    color:black;
+    font-family:Arial;
+    font-size:20pt;
+    position: relative;
+    display: block;
     
 }
-
 
 
 
